@@ -3,55 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tania Nipu | Portfolio</title>
+    <title>Tania Nipu | Software Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1.5rem; }
+        @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Outfit:wght@400;500;600&display=swap');
+        body { font-family: 'Outfit', sans-serif; background-color: #f0f7ff; color: #1e3a8a; }
+        h1, h2, h3, .heading-font { font-family: 'Unbounded', sans-serif; text-transform: uppercase; }
+        .available-tag { background: white; padding: 10px 20px; border-radius: 50px; border: 1px solid #e2e8f0; display: inline-flex; items-center gap: 8px; font-size: 14px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .green-dot { width: 10px; hieght: 10px; background: #22c55e; border-radius: 50%; }
+        .nav-link { font-size: 15px; color: #64748b; text-decoration: none; font-weight: 500; }
+        .card { background: white; border-radius: 20px; padding: 20px; border: 1px solid #e2e8f0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
     </style>
 </head>
-<body class="min-h-screen p-4 md:p-8 flex flex-col items-center">
-    <div class="max-w-2xl w-full space-y-6">
-        <div class="text-center py-10 glass">
-            <div class="w-24 h-24 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold border-4 border-blue-400">TN</div>
-            <h1 class="text-3xl font-extrabold">Tania Nipu</h1>
-            <p class="text-blue-400 font-medium">Computer Science Student</p>
-            <div class="flex justify-center gap-5 mt-4 text-xl">
-                <a href="https://github.com/Tania-Nipu" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
-                <a href="mailto:tanianipu62@gmail.com" class="hover:text-blue-400"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
+<body class="p-4 md:p-8 flex justify-center">
 
-        <div class="p-6 glass">
-            <h2 class="text-xl font-bold mb-3 text-blue-300"><i class="fas fa-user mr-2"></i> About Me</h2>
-            <p class="text-gray-300 leading-relaxed">I am a motivated CSE student at NUBTK. I enjoy solving real-world problems through technology and continuously improving my skills by learning new tools.</p>
-        </div>
+<div class="w-full max-w-lg space-y-12">
 
-        <div class="p-6 glass">
-            <h2 class="text-xl font-bold mb-3 text-blue-300"><i class="fas fa-graduation-cap mr-2"></i> Education</h2>
-            <div class="border-l-2 border-blue-500 pl-4">
-                <p class="font-bold">B.Sc. in Computer Science & Engineering</p>
-                <p class="text-sm text-gray-400">Northern University of Business and Technology Khulna</p>
-                <p class="text-xs text-blue-400 italic">2023 - Present</p>
-            </div>
+    <div class="flex items-center justify-between pb-4 border-b">
+        <div class="flex items-center gap-1.5">
+            <h1 class="text-xl font-bold">Tania<span class="text-cyan-500">.</span></h1>
         </div>
-
-        <div class="p-6 glass">
-            <h2 class="text-xl font-bold mb-4 text-blue-300"><i class="fas fa-code mr-2"></i> Skills</h2>
-            <div class="grid grid-cols-2 gap-3">
-                <div class="bg-white/5 p-2 rounded text-center text-sm border border-white/10">HTML & CSS</div>
-                <div class="bg-white/5 p-2 rounded text-center text-sm border border-white/10">C & Java</div>
-                <div class="bg-white/5 p-2 rounded text-center text-sm border border-white/10">Operating Systems</div>
-                <div class="bg-white/5 p-2 rounded text-center text-sm border border-white/10">Git & GitHub</div>
-            </div>
-        </div>
-
-        <div class="p-6 glass text-center">
-            <h2 class="text-xl font-bold mb-3 text-blue-300 text-left">Contact</h2>
-            <p class="text-gray-300">Email: tanianipu62@gmail.com</p>
-            <p class="text-gray-300">Phone: +880 1753 871 222</p>
+        <div class="flex gap-4">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#skills" class="nav-link">Skills</a>
         </div>
     </div>
+
+    <div class="space-y-6 pt-6">
+        <div class="available-tag">
+            <div class="green-dot"></div> Available for opportunities
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+            Building<br> things with<br> purpose<span class="text-cyan-400">.</span>
+        </div>
+        <p class="text-gray-500 max-w-md">"The only way to do great work is to love what you do -Steve Jobs "</p>
+        <div class="flex gap-4 pt-4">
+            <a href="#skills" class="bg-black text-white px-8 py-3 rounded-xl font-medium flex items-center gap-2">View Skills &rarr;</a>
+            <a href="mailto:tanianipu62@gmail.com" class="border border-gray-300 text-black px-8 py-3 rounded-xl font-medium">Get in Touch</a>
+        </div>
+    </div>
+
+    <div class="bg-[#0c1221] text-white rounded-3xl p-8 relative overflow-hidden space-y-2">
+        <div class="bg-cyan-400 text-[#0c1221] px-4 py-1.5 rounded-full font-semibold absolute top-6 right-6 text-sm">Open to Work</div>
+        <p class="text-gray-400 uppercase text-xs tracking-wider">Portfolio Card</p>
+        <h3 class="text-2xl font-bold">Tania Nipu</h3>
+        <p class="text-gray-300">Computer Science and Engineering Student</p>
+    </div>
+
+    <div id="about" class="space-y-6 pt-10">
+        <p class="text-gray-400 uppercase text-xs tracking-wider">Meet Me</p>
+        <h2 class="text-4xl font-bold">Tania<br> Nipu<span class="text-cyan-400">.</span></h2>
+        <p class="text-gray-500 max-w-lg leading-relaxed">
+            Hi! I'm Tania — a Computer Science student with a deep love for programming, problem-solving, and building things from scratch. I believe in writing clean, purposeful code.<br><br>
+            I'm actively seeking internships and fresher roles where I can contribute my skills, learn from experienced teams, and grow as a developer.
+        </p>
+        <div class="flex flex-wrap gap-2.5 pt-2">
+            <span class="bg-black text-white px-5 py-2 rounded-full font-medium">C & Java</span>
+            <span class="bg-black text-white px-5 py-2 rounded-full font-medium">HTML & CSS</span>
+            <span class="bg-white border text-black px-5 py-2 rounded-full font-medium">Problem Solver</span>
+            <span class="bg-white border text-black px-5 py-2 rounded-full font-medium">Quick Learner</span>
+        </div>
+    </div>
+
+    <div id="education" class="space-y-6 pt-10">
+        <p class="text-gray-400 uppercase text-xs tracking-wider">Education</p>
+        <h2 class="text-4xl font-bold leading-tight">My academic<br> journey<span class="text-cyan-400">.</span></h2>
+        
+        <div class="card space-y-4">
+            <div class="flex gap-4">
+                <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl text-cyan-500">🎓</div>
+                <div class="space-y-1">
+                    <p class="text-gray-500 text-sm">2023 - Present</p>
+                    <p class="font-semibold text-xl">B.Sc. in Computer Science & Engineering</p>
+                    <p class="text-gray-500 text-sm">Northern University of Business and Technology Khulna</p>
+                </div>
+            </div>
+            <p class="text-gray-500 max-w-md pt-2">Studying core computer science fundamentals including data structures, algorithms, OOP, and software engineering principles.</p>
+            <div class="flex flex-wrap gap-2.5 pt-2">
+                <span class="bg-white border text-black px-4 py-1.5 rounded-full text-sm font-medium">C Programming</span>
+                <span class="bg-white border text-black px-4 py-1.5 rounded-full text-sm font-medium">Java OOP</span>
+                <span class="bg-white border text-black px-4 py-1.5 rounded-full text-sm font-medium">DBMS</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="space-y-6 pt-10 pb-20">
+        <p class="text-gray-400 uppercase text-xs tracking-wider">Contact</p>
+        <h2 class="text-4xl font-bold leading-tight">Let's connect<span class="text-cyan-400">.</span></h2>
+        <div class="space-y-4">
+            <div class="card flex items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center text-2xl text-blue-900">✉️</div>
+                    <div class="space-y-1">
+                        <p class="text-gray-500 text-sm">Email</p>
+                        <p class="font-medium text-lg">tanianipu62@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center text-2xl text-blue-900">📱</div>
+                    <div class="space-y-1">
+                        <p class="text-gray-500 text-sm">Phone</p>
+                        <p class="font-medium text-lg">+880 1753 871 222</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center text-2xl text-blue-900">📂</div>
+                    <div class="space-y-1">
+                        <p class="text-gray-500 text-sm">GitHub</p>
+                        <p class="font-medium text-lg">github.com/Tania-Nipu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-10 border-t border-gray-200 text-center text-gray-500 text-sm space-y-4">
+        <p>© 2026 Tania Nipu. Built with care.</p>
+        <div class="flex justify-center gap-6">
+            <a href="#" class="hover:text-cyan-500">Back to top ↑</a>
+            <a href="[PASTE_YOUR_CV_DRIVE_LINK_HERE]" target="_blank" class="hover:text-cyan-500">Resume PDF →</a>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
